@@ -12,24 +12,33 @@
         <h1>Application</h1>
     </header>
     <main>
-        <form id="form">
-            <section>
+        <form id="form-example">
+            <section id="about-section">
                 <h2>About You</h2>
                 <p>
                     <label for="name">Your name:</label>
                     <input 
                         type="text"
+                        name="name"
                         id="name"
                         autocomplete="off"
                         minlength="1"
                         maxlength="15"
-                        required
+                    >
+                </p>
+                <p>
+                    <label for="zip-code">Zip code:</label>
+                    <input
+                        type="text"
+                        name="zip-code"
+                        id="zip-code"
+                        minlength="5"
                     >
                 </p>
             </section>
             <button>Submit Application</button>
         </form>
     </main>
-    
+    <script type="module" src="./src/apply.js"></script>
 </body>
 </html>
