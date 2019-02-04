@@ -32,8 +32,38 @@
                         type="text"
                         name="zip-code"
                         id="zip-code"
+                        autocomplete="off"
                         minlength="5"
                     >
+                </p>
+            </section>
+            <section id="section-two">
+                <h2>Section Two</h2>
+                <p>Allergic to peanuts?</p>
+                <p>
+                    <label for="yes">Yes</label>
+                    <input
+                        type="radio"
+                        value="yes"
+                        id="yes"
+                    >
+                    <label for="no">No</label>
+                    <input
+                        type="radio"
+                        value="no"
+                        id="no"
+                    >
+                </p>
+                <p>If yes - on what scale?</p>
+                <p>
+                    <label for="peanuts"></label>
+                    <input
+                        type="range"
+                        id="peanuts"
+                        min="0"
+                        max="10"
+                    >
+                    <span id="allergic-number">5</span>
                 </p>
             </section>
             <button>Submit Application</button>
