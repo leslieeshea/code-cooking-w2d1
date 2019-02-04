@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="apply.css">
     <title>Application</title>
 </head>
 <body>
@@ -11,7 +12,23 @@
         <h1>Application</h1>
     </header>
     <main>
-        
+        <form id="form">
+            <section>
+                <h2>About You</h2>
+                <p>
+                    <label for="name">Your name:</label>
+                    <input 
+                        type="text"
+                        id="name"
+                        autocomplete="off"
+                        minlength="1"
+                        maxlength="15"
+                        required
+                    >
+                </p>
+            </section>
+            <button>Submit Application</button>
+        </form>
     </main>
     
 </body>
