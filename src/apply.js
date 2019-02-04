@@ -13,6 +13,10 @@ peanutRangeNode.addEventListener('change', function() {
 
 yesNode.addEventListener('change', function() {
     console.log('yes', yesNode.checked);
+    if(yesNode.checked) {
+        allergicNumberNode.textContent = 1;
+        peanutRangeNode.value = 1;
+    }
 });
 
 noNode.addEventListener('change', function() {
