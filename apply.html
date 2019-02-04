@@ -46,12 +46,14 @@
                         type="radio"
                         value="yes"
                         id="yes"
+                        name="allergic"
                     >
                     <label for="no">No</label>
                     <input
                         type="radio"
                         value="no"
                         id="no"
+                        name="allergic"
                     >
                 </p>
                 <p>If yes - on what scale?</p>
@@ -62,8 +64,19 @@
                         id="peanuts"
                         min="0"
                         max="10"
+                        value="0"
                     >
-                    <span id="allergic-number">5</span>
+                    <span id="allergic-number">0</span>
+                </p>
+                <p>
+                    <label for="peanuts-2">On what scale?</label>
+                    <input
+                        type="number"
+                        id="peanuts-2"
+                        name="peanuts-2"
+                        min="0"
+                        max="10"
+                    >
                 </p>
             </section>
             <button>Submit Application</button>
