@@ -6,7 +6,7 @@ const allergicNumberNode = document.getElementById('allergic-number');
 const yesNode = document.getElementById('yes');
 const noNode = document.getElementById('no');
 const peanutNodeTwo = document.getElementById('peanuts-2');
-
+const roleNode = document.getElementById('role');
 
 peanutRangeNode.addEventListener('change', function() {
     allergicNumberNode.textContent = peanutRangeNode.value;
@@ -39,7 +39,8 @@ formNode.addEventListener('submit', function(event) {
         name: nameNode.value,
         zipCode: zipCodeNode.value,
         allergyScale: peanutRangeNode.value,
-        allergyScaleTwo: peanutNodeTwo.value
+        allergyScaleTwo: peanutNodeTwo.value,
+        role: roleNode.value
     };
 
     console.log(applicant);
