@@ -43,5 +43,5 @@ formNode.addEventListener('submit', function(event) {
         role: roleNode.value
     };
 
-    return applicant;
+    console.log(applicant);
 });
